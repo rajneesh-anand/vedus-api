@@ -73,4 +73,45 @@ router.get("/about", async (req, res) => {
   res.sendFile(path.join(__dirname, "../upload/about.json"));
 });
 
+router.get("/class/:id", async (req, res) => {
+  const className = req.params.id;
+
+  switch (className) {
+    case "six":
+      res.header("Content-Type", "application/json");
+      res.sendFile(path.join(__dirname, "../upload/class/six.json"));
+      break;
+    case "seven":
+      res.header("Content-Type", "application/json");
+      res.sendFile(path.join(__dirname, "../upload/class/seven.json"));
+      break;
+    case "eight":
+      res.header("Content-Type", "application/json");
+      res.sendFile(path.join(__dirname, "../upload/class/eight.json"));
+      break;
+    case "nine":
+      res.header("Content-Type", "application/json");
+      res.sendFile(path.join(__dirname, "../upload/class/nine.json"));
+      break;
+    case "ten":
+      res.header("Content-Type", "application/json");
+      res.sendFile(path.join(__dirname, "../upload/class/ten.json"));
+      break;
+    case "eleven":
+      res.header("Content-Type", "application/json");
+      res.sendFile(path.join(__dirname, "../upload/class/eleven.json"));
+      break;
+    case "twelve":
+      res.header("Content-Type", "application/json");
+      res.sendFile(path.join(__dirname, "../upload/class/twelve.json"));
+      break;
+    case "mix":
+      res.header("Content-Type", "application/json");
+      res.sendFile(path.join(__dirname, "../upload/class/mix.json"));
+      break;
+    default:
+      console.log(`Sorry, we are out of ${exp}.`);
+  }
+});
+
 module.exports = router;
