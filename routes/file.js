@@ -73,44 +73,102 @@ router.get("/about", async (req, res) => {
   res.sendFile(path.join(__dirname, "../upload/about.json"));
 });
 
-router.get("/class/:id", async (req, res) => {
-  const className = req.params.id;
+router.get("/pricing/:class/:medium", async (req, res) => {
+  const className = req.params.class;
+  const mediumName = req.params.medium;
+  console.log(className);
+  console.log(mediumName);
 
-  switch (className) {
-    case "six":
+  fs.readFile(
+    path.join(__dirname, "../upload/pricing.json"),
+    (err, jsonData) => {
+      if (err) {
+        console.log("Error reading file from disk:", err);
+        return;
+      }
+      try {
+        const pricingArray = JSON.parse(jsonData);
+        console.log(pricingArray);
+        const pricingData = pricingArray.filter(
+          (ele) => ele.class === className && ele.medium === mediumName
+        );
+
+        console.log(pricingData);
+        return res.status(200).json({ msg: "success", data: pricingData });
+      } catch (err) {
+        console.log(err);
+        return res.status(500).send(error);
+      }
+    }
+  );
+});
+
+router.get("/class/:class/:medium", async (req, res) => {
+  const className = req.params.class;
+  const medium = req.params.medium;
+  let searchtext = `${className}-${medium}`;
+  console.log(searchtext);
+
+  switch (searchtext) {
+    case "six-english":
       res.header("Content-Type", "application/json");
       res.sendFile(path.join(__dirname, "../upload/class/six.json"));
       break;
-    case "seven":
+    case "six-hindi":
+      res.header("Content-Type", "application/json");
+      res.sendFile(path.join(__dirname, "../upload/class/six-hindi.json"));
+      break;
+    case "seven-english":
       res.header("Content-Type", "application/json");
       res.sendFile(path.join(__dirname, "../upload/class/seven.json"));
       break;
-    case "eight":
+    case "seven-hindi":
+      res.header("Content-Type", "application/json");
+      res.sendFile(path.join(__dirname, "../upload/class/seven-hindi.json"));
+      break;
+    case "eight-english":
       res.header("Content-Type", "application/json");
       res.sendFile(path.join(__dirname, "../upload/class/eight.json"));
       break;
-    case "nine":
+    case "eight-hindi":
+      res.header("Content-Type", "application/json");
+      res.sendFile(path.join(__dirname, "../upload/class/eight-hindi.json"));
+      break;
+    case "nine-english":
       res.header("Content-Type", "application/json");
       res.sendFile(path.join(__dirname, "../upload/class/nine.json"));
       break;
-    case "ten":
+    case "nine-hindi":
+      res.header("Content-Type", "application/json");
+      res.sendFile(path.join(__dirname, "../upload/class/nine-hindi.json"));
+      break;
+    case "ten-english":
       res.header("Content-Type", "application/json");
       res.sendFile(path.join(__dirname, "../upload/class/ten.json"));
       break;
-    case "eleven":
+    case "ten-hindi":
+      res.header("Content-Type", "application/json");
+      res.sendFile(path.join(__dirname, "../upload/class/ten-hindi.json"));
+      break;
+    case "eleven-english":
       res.header("Content-Type", "application/json");
       res.sendFile(path.join(__dirname, "../upload/class/eleven.json"));
       break;
-    case "twelve":
+    case "eleven-hindi":
+      res.header("Content-Type", "application/json");
+      res.sendFile(path.join(__dirname, "../upload/class/eleven-hindi.json"));
+      break;
+    case "twelve-english":
       res.header("Content-Type", "application/json");
       res.sendFile(path.join(__dirname, "../upload/class/twelve.json"));
       break;
-    case "mix":
+    case "twelve-hindi":
       res.header("Content-Type", "application/json");
-      res.sendFile(path.join(__dirname, "../upload/class/mix.json"));
+      res.sendFile(path.join(__dirname, "../upload/class/twelve-hindi.json"));
       break;
+
     default:
-      console.log(`Sorry, we are out of ${exp}.`);
+      console.log(`Sorry, we didnt find anaything`);
   }
 });
 

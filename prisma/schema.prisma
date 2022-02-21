@@ -73,17 +73,17 @@ model Product {
 model Order {
   id        Int     @default(autoincrement()) @id
   orderDate     DateTime  @default(now())  
-  orderNumber     String?
+  orderNumber     String
   name        String
   email       String 
-  board       String
-  medium      String
   class       String?
-  subjects    String[]
+  planType    String?
+  planDetails String?
+  board       String?
+  medium      String?
   amount      String?
-  orderType   String
   paymentId   String?
-  paymentStatus String ?
+  paymentStatus String?
   
  
 }
@@ -96,6 +96,8 @@ model User {
   address       String?
   city          String?
   state         String?
+  class         String?
+  medium        String?
   mobile        String?
   whatsapp      String?
   image         String?

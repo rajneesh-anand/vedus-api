@@ -1,6 +1,6 @@
 [
   {
-    "subject": "English",
+    "subject": "Mathematics",
     "media": [
       {
         "videoTitle": "Chapter 1",
@@ -24,9 +24,33 @@
       }
     ]
   },
-
   {
-    "subject": "Science",
+    "subject": "Hindi",
+    "media": [
+      {
+        "videoTitle": "Chapter 1",
+        "videoLink": "free"
+      },
+      {
+        "videoTitle": "Chapter 1",
+        "videoLink": "free"
+      },
+      {
+        "videoTitle": "Chapter 1",
+        "videoLink": "free"
+      },
+      {
+        "videoTitle": "Chapter 1",
+        "videoLink": "free"
+      },
+      {
+        "videoTitle": "Chapter 1",
+        "videoLink": "free"
+      }
+    ]
+  },
+  {
+    "subject": "Physics",
     "media": [
       {
         "videoTitle": "Chapter 1",

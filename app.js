@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 
-const enrollment = require("./routes/enrollment");
+const user = require("./routes/user");
 const product = require("./routes/product");
 const auth = require("./routes/auth");
 const file = require("./routes/file");
@@ -42,7 +42,7 @@ app.use(
 // );
 
 app.use("/api/auth", auth);
-app.use("/api/enrollment", enrollment);
+app.use("/api/user", user);
 app.use("/api/products", product);
 app.use("/api", file);
 

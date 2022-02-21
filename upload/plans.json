@@ -1,8 +1,8 @@
 [
   {
     "id": "1",
-    "plan": "Free",
-    "pricing": "free",
+    "plan_name": "Free",
+    "plan_type": "free",
     "features": [
       "Everything will be a cover as per the team and WILL BE COVER AS PER EXAM PATTERN AS PER QUESTION PAPER ghjgh jghjgh jhghg nfgnfgg fggf  ",
       "This is two",
@@ -11,14 +11,15 @@
   },
   {
     "id": "2",
-    "plan": "Basic",
-    "pricing": "99/Month",
+    "plan_name": "Smart Study Plan",
+    "plan_type": "basic",
     "features": ["This is one ", "This is two", "This is three"]
   },
   {
     "id": "3",
-    "plan": "Pro",
-    "pricing": "999/Month",
+    "plan_name": "Live Class Plan",
+    "plan_type": "pro",
+
     "features": [
       "EVERYTHING WILL BE COVER AS PER EXAM PATTERN AS PER QUESTION PAPER ghjgh jghjgh jhghg nfgnfgg fggf  ",
       "This is two",
@@ -27,8 +28,8 @@
   },
   {
     "id": "4",
-    "plan": "Offline",
-    "pricing": "Offline",
+    "plan_name": "Offline",
+    "plan_type": "offline",
     "features": ["This is one ", "This is two", "This is three"]
   }
 ]

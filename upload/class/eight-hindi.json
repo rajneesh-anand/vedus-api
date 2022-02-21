@@ -24,7 +24,31 @@
       }
     ]
   },
-
+  {
+    "subject": "Hindi",
+    "media": [
+      {
+        "videoTitle": "Chapter 1",
+        "videoLink": "free"
+      },
+      {
+        "videoTitle": "Chapter 1",
+        "videoLink": "free"
+      },
+      {
+        "videoTitle": "Chapter 1",
+        "videoLink": "free"
+      },
+      {
+        "videoTitle": "Chapter 1",
+        "videoLink": "free"
+      },
+      {
+        "videoTitle": "Chapter 1",
+        "videoLink": "free"
+      }
+    ]
+  },
   {
     "subject": "Science",
     "media": [

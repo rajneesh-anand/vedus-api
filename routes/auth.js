@@ -62,12 +62,15 @@ router.post("/register", userSignupValidator(), async (req, res) => {
           email: data.fields.email,
           password: hashedPassword,
           address: data.fields.address,
+          class: data.class,
+          medium: data.medium,
           city: data.fields.city,
           state: data.fields.state,
           mobile: data.fields.mobile,
           whatsapp: data.fields.whatsapp,
           image: uploadResult.secure_url,
           userType: data.fields.userType,
+          status: "Active",
         },
       });
       return res.status(200).json(await email.sendEmail(data));
@@ -87,11 +90,14 @@ router.post("/register", userSignupValidator(), async (req, res) => {
           email: data.fields.email,
           password: hashedPassword,
           address: data.fields.address,
+          class: data.class,
+          medium: data.medium,
           city: data.fields.city,
           state: data.fields.state,
           mobile: data.fields.mobile,
           whatsapp: data.fields.whatsapp,
           userType: data.fields.userType,
+          status: "Active",
         },
       });
       return res.status(200).json(await email.sendEmail(data));

@@ -4,7 +4,11 @@ const prisma = require("../lib/prisma");
 
 router.get("/", async (req, res) => {
   try {
-    let result = await prisma.student.findMany({});
+    let result = await prisma.user.findMany({
+      where: {
+        status: "Active",
+      },
+    });
     return res.status(200).json({
       msg: "success",
       data: result,
