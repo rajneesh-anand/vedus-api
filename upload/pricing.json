@@ -57,6 +57,60 @@
         "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Social Study",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Computer Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
       }
     ]
   },
@@ -118,6 +172,60 @@
         "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Social Study",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Computer Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
       }
     ]
   },
@@ -179,6 +287,60 @@
         "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Social Study",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Computer Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
       }
     ]
   },
@@ -225,6 +387,60 @@
       },
       {
         "name": "Hindi",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Social Study",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Computer Science",
         "monthly_fee": "9",
         "halfyearly_fee": "99",
         "yearly_fee": "1000",
@@ -301,6 +517,60 @@
         "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Social Study",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Computer Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
       }
     ]
   },
@@ -362,6 +632,60 @@
         "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Social Study",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Computer Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
       }
     ]
   },
@@ -423,6 +747,60 @@
         "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Social Study",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Computer Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
       }
     ]
   },
@@ -469,6 +847,60 @@
       },
       {
         "name": "Hindi",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Social Study",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Computer Science",
         "monthly_fee": "9",
         "halfyearly_fee": "99",
         "yearly_fee": "1000",
@@ -545,6 +977,60 @@
         "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Social Study",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Computer Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
       }
     ]
   },
@@ -606,6 +1092,60 @@
         "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Social Study",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Computer Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
       }
     ]
   },
@@ -652,6 +1192,60 @@
       },
       {
         "name": "Hindi",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Social Study",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Computer Science",
         "monthly_fee": "9",
         "halfyearly_fee": "99",
         "yearly_fee": "1000",
@@ -728,6 +1322,60 @@
         "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Social Study",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Computer Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
       }
     ]
   },
@@ -789,6 +1437,60 @@
         "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Social Study",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Computer Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
       }
     ]
   },
@@ -835,6 +1537,60 @@
       },
       {
         "name": "Hindi",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Social Study",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Science",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      },
+      {
+        "name": "Computer Science",
         "monthly_fee": "9",
         "halfyearly_fee": "99",
         "yearly_fee": "1000",
