@@ -13,9 +13,9 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
         "liveclass_monthly_status": "full",
         "liveclass_halfyearly_status": "active",
@@ -32,13 +32,13 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
+        "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "active",
-        "liveclass_yearly_status": "active"
+        "liveclass_yearly_status": "full"
       },
       {
         "name": "Hindi",
@@ -50,12 +50,12 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
-        "liveclass_halfyearly_status": "active",
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
       }
     ]
@@ -66,32 +66,58 @@
     "subject": [
       {
         "name": "English",
-        "monthly": "99",
-        "halfyearly": "999",
-        "yearly": "10000",
-        "livechat_monthly": "0",
-        "livechat_halfyearly": "100",
-        "livechat_yearly": "1111"
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "9999",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "full",
+        "liveclass_halfyearly_status": "active",
+        "liveclass_yearly_status": "active"
       },
 
       {
         "name": "Mathematics",
-        "monthly": "9",
-        "halfyearly": "99",
-        "yearly": "1000",
-        "livechat_monthly": "0",
-        "livechat_halfyearly": "100",
-        "livechat_yearly": "1111"
-      },
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
 
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "active",
+        "liveclass_yearly_status": "full"
+      },
       {
         "name": "Hindi",
-        "monthly": "9",
-        "halfyearly": "99",
-        "yearly": "1000",
-        "livechat_monthly": "0",
-        "livechat_halfyearly": "100",
-        "livechat_yearly": "1111"
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
       }
     ]
   },
@@ -101,32 +127,119 @@
     "subject": [
       {
         "name": "English",
-        "monthly": "9",
-        "halfyearly": "99",
-        "yearly": "1000",
-        "livechat_monthly": "0",
-        "livechat_halfyearly": "100",
-        "livechat_yearly": "1111"
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "9999",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "full",
+        "liveclass_halfyearly_status": "active",
+        "liveclass_yearly_status": "active"
       },
 
       {
         "name": "Mathematics",
-        "monthly": "9",
-        "halfyearly": "99",
-        "yearly": "1000",
-        "livechat_monthly": "0",
-        "livechat_halfyearly": "100",
-        "livechat_yearly": "1111"
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "active",
+        "liveclass_yearly_status": "full"
+      },
+      {
+        "name": "Hindi",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
+      }
+    ]
+  },
+  {
+    "class": "seven",
+    "medium": "hindi",
+    "subject": [
+      {
+        "name": "English",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "9999",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "full",
+        "liveclass_halfyearly_status": "active",
+        "liveclass_yearly_status": "active"
       },
 
       {
+        "name": "Mathematics",
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "active",
+        "liveclass_yearly_status": "full"
+      },
+      {
         "name": "Hindi",
-        "monthly": "9",
-        "halfyearly": "99",
-        "yearly": "1000",
-        "livechat_monthly": "0",
-        "livechat_halfyearly": "100",
-        "livechat_yearly": "1111"
+        "monthly_fee": "9",
+        "halfyearly_fee": "99",
+        "yearly_fee": "1000",
+
+        "monthly_status": "full",
+        "halfyearly_status": "active",
+        "yearly_status": "active",
+
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
+
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
+        "liveclass_yearly_status": "active"
       }
     ]
   },
@@ -144,9 +257,9 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
         "liveclass_monthly_status": "full",
         "liveclass_halfyearly_status": "active",
@@ -163,13 +276,13 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
+        "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "active",
-        "liveclass_yearly_status": "active"
+        "liveclass_yearly_status": "full"
       },
       {
         "name": "Hindi",
@@ -181,12 +294,12 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
-        "liveclass_halfyearly_status": "active",
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
       }
     ]
@@ -205,9 +318,9 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
         "liveclass_monthly_status": "full",
         "liveclass_halfyearly_status": "active",
@@ -224,13 +337,13 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
+        "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "active",
-        "liveclass_yearly_status": "active"
+        "liveclass_yearly_status": "full"
       },
       {
         "name": "Hindi",
@@ -242,12 +355,12 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
-        "liveclass_halfyearly_status": "active",
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
       }
     ]
@@ -266,9 +379,9 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
         "liveclass_monthly_status": "full",
         "liveclass_halfyearly_status": "active",
@@ -285,13 +398,13 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
+        "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "active",
-        "liveclass_yearly_status": "active"
+        "liveclass_yearly_status": "full"
       },
       {
         "name": "Hindi",
@@ -303,12 +416,12 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
-        "liveclass_halfyearly_status": "active",
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
       }
     ]
@@ -327,9 +440,9 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
         "liveclass_monthly_status": "full",
         "liveclass_halfyearly_status": "active",
@@ -346,13 +459,13 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
+        "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "active",
-        "liveclass_yearly_status": "active"
+        "liveclass_yearly_status": "full"
       },
       {
         "name": "Hindi",
@@ -364,12 +477,12 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
-        "liveclass_halfyearly_status": "active",
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
       }
     ]
@@ -388,9 +501,9 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
         "liveclass_monthly_status": "full",
         "liveclass_halfyearly_status": "active",
@@ -407,13 +520,13 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
+        "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "active",
-        "liveclass_yearly_status": "active"
+        "liveclass_yearly_status": "full"
       },
       {
         "name": "Hindi",
@@ -425,12 +538,12 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
-        "liveclass_halfyearly_status": "active",
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
       }
     ]
@@ -449,9 +562,9 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
         "liveclass_monthly_status": "full",
         "liveclass_halfyearly_status": "active",
@@ -468,13 +581,13 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
+        "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "active",
-        "liveclass_yearly_status": "active"
+        "liveclass_yearly_status": "full"
       },
       {
         "name": "Hindi",
@@ -486,12 +599,12 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
-        "liveclass_halfyearly_status": "active",
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
       }
     ]
@@ -510,9 +623,9 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
         "liveclass_monthly_status": "full",
         "liveclass_halfyearly_status": "active",
@@ -529,13 +642,13 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
+        "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "active",
-        "liveclass_yearly_status": "active"
+        "liveclass_yearly_status": "full"
       },
       {
         "name": "Hindi",
@@ -547,12 +660,12 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
-        "liveclass_halfyearly_status": "active",
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
       }
     ]
@@ -571,9 +684,9 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
         "liveclass_monthly_status": "full",
         "liveclass_halfyearly_status": "active",
@@ -590,13 +703,13 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
+        "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "active",
-        "liveclass_yearly_status": "active"
+        "liveclass_yearly_status": "full"
       },
       {
         "name": "Hindi",
@@ -608,12 +721,12 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
-        "liveclass_halfyearly_status": "active",
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
       }
     ]
@@ -632,9 +745,9 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
         "liveclass_monthly_status": "full",
         "liveclass_halfyearly_status": "active",
@@ -651,13 +764,13 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
+        "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "active",
-        "liveclass_yearly_status": "active"
+        "liveclass_yearly_status": "full"
       },
       {
         "name": "Hindi",
@@ -669,12 +782,12 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
-        "liveclass_halfyearly_status": "active",
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
       }
     ]
@@ -693,9 +806,9 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
         "liveclass_monthly_status": "full",
         "liveclass_halfyearly_status": "active",
@@ -712,13 +825,13 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
+        "liveclass_monthly_status": "active",
         "liveclass_halfyearly_status": "active",
-        "liveclass_yearly_status": "active"
+        "liveclass_yearly_status": "full"
       },
       {
         "name": "Hindi",
@@ -730,12 +843,12 @@
         "halfyearly_status": "active",
         "yearly_status": "active",
 
-        "liveclass_monthly": "0",
-        "liveclass_halfyearly": "100",
-        "liveclass_yearly": "1111",
+        "liveclass_monthly_fee": "0",
+        "liveclass_halfyearly_fee": "100",
+        "liveclass_yearly_fee": "1111",
 
-        "liveclass_monthly_status": "full",
-        "liveclass_halfyearly_status": "active",
+        "liveclass_monthly_status": "active",
+        "liveclass_halfyearly_status": "full",
         "liveclass_yearly_status": "active"
       }
     ]

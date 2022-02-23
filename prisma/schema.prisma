@@ -109,6 +109,7 @@ model User {
   accounts      Account[]
   sessions      Session[]
   posts         Post[]
+   verificationTokens    VerificationToken[]
 
 }
 
@@ -144,9 +145,12 @@ model Session {
 
 
 model VerificationToken {
-  identifier String
+  id         Int     @default(autoincrement()) @id
+  identifier String?
+  userId     Int
   token      String   @unique
-  expires    DateTime
+  expires    DateTime?   
+  user User @relation(fields: [userId], references: [id])
 
   @@unique([identifier, token])
 }

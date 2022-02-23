@@ -1,5 +1,6 @@
 const express = require("express");
-const { hashSync, genSaltSync } = require("bcrypt");
+const crypto = require("crypto");
+const { hashSync, genSaltSync, hash } = require("bcrypt");
 const { IncomingForm } = require("formidable");
 const fs = require("fs");
 const path = require("path");
@@ -7,8 +8,9 @@ const prisma = require("../lib/prisma");
 const DatauriParser = require("datauri/parser");
 const cloudinary = require("cloudinary").v2;
 const { userSignupValidator } = require("../helper/user-validator");
+const jwt = require("jsonwebtoken");
 
-const email = require("../helper/email");
+const emailMailer = require("../helper/email");
 
 const router = express.Router();
 const parser = new DatauriParser();
@@ -73,7 +75,7 @@ router.post("/register", userSignupValidator(), async (req, res) => {
           status: "Active",
         },
       });
-      return res.status(200).json(await email.sendEmail(data));
+      return res.status(200).json(await emailMailer.sendEmail(data));
     } catch (error) {
       console.log(error);
       return res.status(503).send(error);
@@ -100,7 +102,7 @@ router.post("/register", userSignupValidator(), async (req, res) => {
           status: "Active",
         },
       });
-      return res.status(200).json(await email.sendEmail(data));
+      return res.status(200).json(await emailMailer.sendEmail(data));
     } catch (error) {
       console.log(error);
       return res.status(503).json({ message: "Something went wrong !" });
@@ -110,6 +112,114 @@ router.post("/register", userSignupValidator(), async (req, res) => {
       };
     }
   }
+});
+
+router.post("/forgot-password", async (req, res) => {
+  const { email } = req.body;
+  console.log(req.body);
+  let user = await prisma.user.findFirst({ where: { email: email } });
+  if (!user) {
+    return res
+      .status(422)
+      .json({ message: "You are not regsitered with this email address" });
+  }
+  console.log(user);
+  let token = await prisma.verificationToken.findFirst({
+    where: {
+      user: { email: email },
+    },
+  });
+  console.log(token);
+  if (token) {
+    await prisma.verificationToken.deleteMany({
+      where: {
+        userId: user.id,
+      },
+    });
+  }
+
+  let resetToken = jwt.sign({ email: email }, process.env.PWD_TOKEN_SECRET, {
+    expiresIn: "10m",
+  });
+  // const salt = genSaltSync(10);
+  // const hashToken = hashSync(resetToken, salt);
+  // console.log(hashToken);
+
+  try {
+    await prisma.verificationToken.create({
+      data: {
+        token: resetToken,
+        user: { connect: { email: email } },
+      },
+    });
+
+    const link = `https://www.vedusone.com/user/reset-password?access=${resetToken}`;
+    await emailMailer.sendPasswordResetEmail({
+      pwdLink: link,
+      email: email,
+    });
+    return res.status(200).json({ message: "success" });
+  } catch (error) {
+    console.log(error);
+    return res.status(503).json({ message: "something went wrong !" });
+  }
+});
+
+router.post("/reset-password/reset/:access", async (req, res) => {
+  const accessToken = req.params.access;
+  const { password } = req.body;
+  const { email } = jwt.verify(accessToken, process.env.PWD_TOKEN_SECRET);
+
+  const salt = genSaltSync(10);
+  const hashedPassword = hashSync(password, salt);
+
+  try {
+    await prisma.user.update({
+      where: {
+        email: email,
+      },
+      data: {
+        password: hashedPassword,
+      },
+    });
+    return res.status(200).json({ message: "success" });
+  } catch (error) {
+    console.log(error);
+    return res.status(503).json({ message: "Something went wrong !" });
+  } finally {
+    async () => {
+      await prisma.$disconnect();
+    };
+  }
+});
+
+router.get("/reset-password/:access", async (req, res) => {
+  const accessToken = req.params.access;
+  console.log(accessToken);
+
+  let tokenData = await prisma.verificationToken.findFirst({
+    where: { token: accessToken },
+  });
+  if (!tokenData) {
+    return res
+      .status(403)
+      .json({ message: "You are not authorized to reset password" });
+  }
+
+  jwt.verify(
+    accessToken,
+    process.env.PWD_TOKEN_SECRET,
+    function (err, decoded) {
+      console.log(decoded);
+      if (err) {
+        return res
+          .status(403)
+          .json({ message: "You are not authorized to reset password" });
+      } else {
+        return res.status(200).json({ message: "success" });
+      }
+    }
+  );
 });
 
 module.exports = router;
