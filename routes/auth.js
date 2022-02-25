@@ -32,15 +32,27 @@ router.post("/register", userSignupValidator(), async (req, res) => {
     });
   });
 
-  let user = await prisma.user.count({
+  let emailExits = await prisma.user.count({
     where: {
       email: data.fields.email,
     },
   });
 
-  if (user > 0) {
+  let mobileExits = await prisma.user.count({
+    where: {
+      mobile: data.fields.mobile,
+    },
+  });
+
+  if (emailExits > 0) {
     return res.status(503).json({
       message: " Email Id is already registered !",
+    });
+  }
+
+  if (mobileExits > 0) {
+    return res.status(503).json({
+      message: "Mobile Number is already in use !",
     });
   }
 

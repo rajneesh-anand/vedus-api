@@ -46,7 +46,7 @@ router.get("/", auth, async (req, res) => {
   const perPage = req.query.limit || 25;
 
   const url = `/products?limit=${perPage}`;
-  // console.log(curPage);
+
   const skipItems =
     curPage == 1 ? 0 : (parseInt(perPage) - 1) * parseInt(curPage);
 
