@@ -58,6 +58,9 @@ router.get("/", async (req, res) => {
     const users = await prisma.user.findMany({
       skip: skipItems,
       take: parseInt(perPage),
+      where: {
+        userType: "Student",
+      },
       orderBy: {
         createdAt: sortedBy,
       },
@@ -78,18 +81,70 @@ router.get("/", async (req, res) => {
   }
 });
 
-module.exports = router;
-
 router.get("/list", async (req, res) => {
   try {
     let result = await prisma.user.findMany({
       where: {
         status: "Active",
+        userType: "Student",
       },
     });
     return res.status(200).json({
       msg: "success",
       data: result,
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send(error);
+  } finally {
+    async () => {
+      await prisma.$disconnect();
+    };
+  }
+});
+
+router.get("/list/home", async (req, res) => {
+  try {
+    let result = await prisma.user.findMany({
+      take: 15,
+      where: {
+        status: "Active",
+        userType: "Student",
+      },
+      orderBy: {
+        createdAt: "desc",
+      },
+    });
+    return res.status(200).json({
+      msg: "success",
+      data: result,
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send(error);
+  } finally {
+    async () => {
+      await prisma.$disconnect();
+    };
+  }
+});
+
+router.post("/status/:id", async (req, res) => {
+  const id = req.params.id;
+  const status = req.body.userStatus;
+  console.log(id);
+  console.log(status);
+  try {
+    await prisma.user.update({
+      where: {
+        id: Number(id),
+      },
+      data: {
+        status: status,
+      },
+    });
+    return res.status(200).json({
+      msg: "success",
     });
   } catch (error) {
     console.log(error);
