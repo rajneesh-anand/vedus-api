@@ -17,7 +17,36 @@ router.post("/plans", async (req, res) => {
 
   try {
     fs.writeFile(
-      path.join(__dirname, `../upload/${data.files.uploadedFile.name}`),
+      path.join(__dirname, `../upload/plans.json`),
+      rawData,
+      function (err) {
+        if (err) console.log(err);
+        return res.status(200).json({
+          status: "success",
+          message: "File uploaded successfully",
+        });
+      }
+    );
+  } catch (error) {
+    console.log(error);
+    res.json(error);
+  }
+});
+
+router.post("/pricing", async (req, res) => {
+  const data = await new Promise((resolve, reject) => {
+    const form = new IncomingForm();
+    form.parse(req, async (err, fields, files) => {
+      if (err) return reject(err);
+      resolve({ fields, files });
+    });
+  });
+
+  const rawData = fs.readFileSync(data.files.uploadedFile.path);
+
+  try {
+    fs.writeFile(
+      path.join(__dirname, `../upload/pricing.json`),
       rawData,
       function (err) {
         if (err) console.log(err);
@@ -68,6 +97,12 @@ router.get("/plans", async (req, res) => {
   res.sendFile(path.join(__dirname, "../upload/plans.json"));
 });
 
+router.get("/pricing", async (req, res) => {
+  res.statusCode = 200;
+  res.header("Content-Type", "application/json");
+  res.sendFile(path.join(__dirname, "../upload/pricing.json"));
+});
+
 router.get("/about", async (req, res) => {
   res.header("Content-Type", "application/json");
   res.sendFile(path.join(__dirname, "../upload/about.json"));
@@ -76,8 +111,6 @@ router.get("/about", async (req, res) => {
 router.get("/pricing/:class/:medium", async (req, res) => {
   const className = req.params.class;
   const mediumName = req.params.medium;
-  console.log(className);
-  console.log(mediumName);
 
   fs.readFile(
     path.join(__dirname, "../upload/pricing.json"),
@@ -88,7 +121,7 @@ router.get("/pricing/:class/:medium", async (req, res) => {
       }
       try {
         const pricingArray = JSON.parse(jsonData);
-        console.log(pricingArray);
+
         const pricingData = pricingArray.filter(
           (ele) => ele.class === className && ele.medium === mediumName
         );
@@ -107,7 +140,6 @@ router.get("/class/:class/:medium", async (req, res) => {
   const className = req.params.class;
   const medium = req.params.medium;
   let searchtext = `${className}-${medium}`;
-  console.log(searchtext);
 
   switch (searchtext) {
     case "six-english":

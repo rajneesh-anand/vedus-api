@@ -227,6 +227,40 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/home", async (req, res) => {
+  const { orderBy, sortedBy } = req.query;
+  const curPage = req.query.page || 1;
+  const perPage = req.query.limit || 6;
+
+  const skipItems =
+    curPage == 1 ? 0 : (parseInt(perPage) - 1) * parseInt(curPage);
+
+  try {
+    const testinomial = await prisma.testinomial.findMany({
+      skip: skipItems,
+      take: parseInt(perPage),
+      where: {
+        status: "Active",
+      },
+      orderBy: {
+        createdAt: sortedBy,
+      },
+    });
+
+    res.status(200).json({
+      msg: "success",
+      data: testinomial,
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send(error);
+  } finally {
+    async () => {
+      await prisma.$disconnect();
+    };
+  }
+});
+
 router.get("/:id", async (req, res) => {
   const id = req.params.id;
   try {
