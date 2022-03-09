@@ -20,7 +20,9 @@ app.use(express.urlencoded({ extended: true }));
 
 var allowedDomains = [
   "https://vedas.vercel.app",
+  "https://vedas-admin.vercel.app",
   "https://www.vedusone.com",
+  "https://www.admin.vedusone.com",
   "http://localhost:3000",
 ];
 
