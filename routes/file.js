@@ -17,7 +17,7 @@ router.post("/plans", async (req, res) => {
 
   try {
     fs.writeFile(
-      path.join(__dirname, `../upload/plans.json`),
+      path.join(__dirname, `../upload/plans-information.json`),
       rawData,
       function (err) {
         if (err) console.log(err);
@@ -46,7 +46,7 @@ router.post("/pricing", async (req, res) => {
 
   try {
     fs.writeFile(
-      path.join(__dirname, `../upload/pricing.json`),
+      path.join(__dirname, `../upload/plans-pricing.json`),
       rawData,
       function (err) {
         if (err) console.log(err);
@@ -94,13 +94,13 @@ router.post("/about", async (req, res) => {
 router.get("/plans", async (req, res) => {
   res.statusCode = 200;
   res.header("Content-Type", "application/json");
-  res.sendFile(path.join(__dirname, "../upload/plans.json"));
+  res.sendFile(path.join(__dirname, "../upload/plans-information.json"));
 });
 
 router.get("/pricing", async (req, res) => {
   res.statusCode = 200;
   res.header("Content-Type", "application/json");
-  res.sendFile(path.join(__dirname, "../upload/pricing.json"));
+  res.sendFile(path.join(__dirname, "../upload/plans-pricing.json"));
 });
 
 router.get("/about", async (req, res) => {
