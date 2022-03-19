@@ -144,7 +144,7 @@ router.get("/class/:class/:medium", async (req, res) => {
   switch (searchtext) {
     case "six-english":
       res.header("Content-Type", "application/json");
-      res.sendFile(path.join(__dirname, "../upload/class/six.json"));
+      res.sendFile(path.join(__dirname, "../upload/class/six-english.json"));
       break;
     case "six-hindi":
       res.header("Content-Type", "application/json");
@@ -152,7 +152,7 @@ router.get("/class/:class/:medium", async (req, res) => {
       break;
     case "seven-english":
       res.header("Content-Type", "application/json");
-      res.sendFile(path.join(__dirname, "../upload/class/seven.json"));
+      res.sendFile(path.join(__dirname, "../upload/class/seven-english.json"));
       break;
     case "seven-hindi":
       res.header("Content-Type", "application/json");
@@ -160,7 +160,7 @@ router.get("/class/:class/:medium", async (req, res) => {
       break;
     case "eight-english":
       res.header("Content-Type", "application/json");
-      res.sendFile(path.join(__dirname, "../upload/class/eight.json"));
+      res.sendFile(path.join(__dirname, "../upload/class/eight-english.json"));
       break;
     case "eight-hindi":
       res.header("Content-Type", "application/json");
@@ -168,7 +168,7 @@ router.get("/class/:class/:medium", async (req, res) => {
       break;
     case "nine-english":
       res.header("Content-Type", "application/json");
-      res.sendFile(path.join(__dirname, "../upload/class/nine.json"));
+      res.sendFile(path.join(__dirname, "../upload/class/nine-english.json"));
       break;
     case "nine-hindi":
       res.header("Content-Type", "application/json");
@@ -176,7 +176,7 @@ router.get("/class/:class/:medium", async (req, res) => {
       break;
     case "ten-english":
       res.header("Content-Type", "application/json");
-      res.sendFile(path.join(__dirname, "../upload/class/ten.json"));
+      res.sendFile(path.join(__dirname, "../upload/class/ten-english.json"));
       break;
     case "ten-hindi":
       res.header("Content-Type", "application/json");
@@ -184,7 +184,7 @@ router.get("/class/:class/:medium", async (req, res) => {
       break;
     case "eleven-english":
       res.header("Content-Type", "application/json");
-      res.sendFile(path.join(__dirname, "../upload/class/eleven.json"));
+      res.sendFile(path.join(__dirname, "../upload/class/eleven-english.json"));
       break;
     case "eleven-hindi":
       res.header("Content-Type", "application/json");
@@ -192,7 +192,7 @@ router.get("/class/:class/:medium", async (req, res) => {
       break;
     case "twelve-english":
       res.header("Content-Type", "application/json");
-      res.sendFile(path.join(__dirname, "../upload/class/twelve.json"));
+      res.sendFile(path.join(__dirname, "../upload/class/twelve-english.json"));
       break;
     case "twelve-hindi":
       res.header("Content-Type", "application/json");
