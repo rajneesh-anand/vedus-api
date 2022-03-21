@@ -3,6 +3,7 @@ const cors = require("cors");
 const path = require("path");
 
 const user = require("./routes/user");
+const order = require("./routes/order");
 const product = require("./routes/product");
 const auth = require("./routes/auth");
 const file = require("./routes/file");
@@ -49,6 +50,7 @@ app.use(
 
 app.use("/api/auth", auth);
 app.use("/api/user", user);
+app.use("/api/order", order);
 app.use("/api/products", product);
 app.use("/api/contact", contact);
 app.use("/api", file);
