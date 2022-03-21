@@ -113,7 +113,7 @@ router.get("/pricing/:class/:medium", async (req, res) => {
   const mediumName = req.params.medium;
 
   fs.readFile(
-    path.join(__dirname, "../upload/pricing.json"),
+    path.join(__dirname, "../upload/plans-pricing.json"),
     (err, jsonData) => {
       if (err) {
         console.log("Error reading file from disk:", err);
