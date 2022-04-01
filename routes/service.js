@@ -26,8 +26,6 @@ router.post("/", async (req, res) => {
     });
   });
 
-  console.log(data);
-
   if (Object.keys(data.files).length !== 0) {
     const photo = await fs.promises
       .readFile(data.files.photo.path)
@@ -39,14 +37,22 @@ router.post("/", async (req, res) => {
     );
     const uploadResult = await cloudinaryUpload(photo64.content);
     try {
-      await prisma.testinomial.create({
+      await prisma.service.create({
         data: {
           name: data.fields.name,
+          description: data.fields.description,
+          slug: data.fields.slug,
           status: data.fields.status,
-          description: data.fields.content,
-          class: data.fields.class,
-          location: data.fields.location,
           image: uploadResult.secure_url,
+          price: Number(data.fields.price),
+          discountedPrice: Number(data.fields.discountedPrice),
+          discount:
+            data.fields.price === "0"
+              ? 0
+              : parseFloat(data.fields.price) -
+                (parseFloat(data.fields.discountedPrice) /
+                  parseFloat(data.fields.price)) *
+                  100,
         },
       });
       return res.status(200).json({ msg: "success" });
@@ -60,13 +66,21 @@ router.post("/", async (req, res) => {
     }
   } else {
     try {
-      await prisma.testinomial.create({
+      await prisma.service.create({
         data: {
           name: data.fields.name,
+          description: data.fields.description,
+          slug: data.fields.slug,
           status: data.fields.status,
-          description: data.fields.content,
-          class: data.fields.class,
-          location: data.fields.location,
+          price: Number(data.fields.price),
+          discountedPrice: Number(data.fields.discountedPrice),
+          discount:
+            data.fields.price === "0"
+              ? 0
+              : parseFloat(data.fields.price) -
+                (parseFloat(data.fields.discountedPrice) /
+                  parseFloat(data.fields.price)) *
+                  100,
         },
       });
       return res.status(200).json({ msg: "success" });
@@ -102,17 +116,27 @@ router.post("/:id", async (req, res) => {
     );
     const uploadResult = await cloudinaryUpload(photo64.content);
     try {
-      await prisma.testinomial.update({
+      await prisma.service.update({
         where: {
           id: Number(id),
         },
         data: {
-          name: data.fields.name,
-          status: data.fields.status,
-          description: data.fields.content,
-          class: data.fields.class,
-          location: data.fields.location,
-          image: uploadResult.secure_url,
+          data: {
+            name: data.fields.name,
+            description: data.fields.description,
+            slug: data.fields.slug,
+            status: data.fields.status,
+            image: uploadResult.secure_url,
+            price: Number(data.fields.price),
+            discountedPrice: Number(data.fields.discountedPrice),
+            discount:
+              data.fields.price === "0"
+                ? 0
+                : parseFloat(data.fields.price) -
+                  (parseFloat(data.fields.discountedPrice) /
+                    parseFloat(data.fields.price)) *
+                    100,
+          },
         },
       });
       return res.status(200).json({ msg: "success" });
@@ -126,16 +150,24 @@ router.post("/:id", async (req, res) => {
     }
   } else {
     try {
-      await prisma.testinomial.update({
+      await prisma.service.update({
         where: {
           id: Number(id),
         },
         data: {
           name: data.fields.name,
+          description: data.fields.description,
+          slug: data.fields.slug,
           status: data.fields.status,
-          description: data.fields.content,
-          class: data.fields.class,
-          location: data.fields.location,
+          price: Number(data.fields.price),
+          discountedPrice: Number(data.fields.discountedPrice),
+          discount:
+            data.fields.price === "0"
+              ? 0
+              : parseFloat(data.fields.price) -
+                (parseFloat(data.fields.discountedPrice) /
+                  parseFloat(data.fields.price)) *
+                  100,
         },
       });
       return res.status(200).json({ msg: "success" });
@@ -196,15 +228,15 @@ router.get("/", async (req, res) => {
   const curPage = req.query.page || 1;
   const perPage = req.query.limit || 25;
 
-  const url = `/testinomial?limit=${perPage}`;
+  const url = `/service?limit=${perPage}`;
 
   const skipItems =
     curPage == 1 ? 0 : (parseInt(perPage) - 1) * parseInt(curPage);
 
-  const totalItems = await prisma.testinomial.count();
+  const totalItems = await prisma.service.count();
 
   try {
-    const users = await prisma.testinomial.findMany({
+    const result = await prisma.service.findMany({
       skip: skipItems,
       take: parseInt(perPage),
       orderBy: {
@@ -214,8 +246,8 @@ router.get("/", async (req, res) => {
     // console.log(product.length);
     res.status(200).json({
       msg: "success",
-      data: users,
-      ...paginate(totalItems, curPage, perPage, users.length, url),
+      data: result,
+      ...paginate(totalItems, curPage, perPage, result.length, url),
     });
   } catch (error) {
     console.log(error);
@@ -236,7 +268,7 @@ router.get("/home", async (req, res) => {
     curPage == 1 ? 0 : (parseInt(perPage) - 1) * parseInt(curPage);
 
   try {
-    const testinomial = await prisma.testinomial.findMany({
+    const result = await prisma.service.findMany({
       skip: skipItems,
       take: parseInt(perPage),
       where: {
@@ -249,7 +281,7 @@ router.get("/home", async (req, res) => {
 
     res.status(200).json({
       msg: "success",
-      data: testinomial,
+      data: result,
     });
   } catch (error) {
     console.log(error);
@@ -264,7 +296,7 @@ router.get("/home", async (req, res) => {
 router.get("/:id", async (req, res) => {
   const id = req.params.id;
   try {
-    const result = await prisma.testinomial.findFirst({
+    const result = await prisma.service.findFirst({
       where: {
         id: Number(id),
       },

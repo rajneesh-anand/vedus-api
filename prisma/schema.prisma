@@ -83,8 +83,23 @@ model Order {
   medium      String?
   amount      String?
   paymentId   String?
-  paymentStatus String?
-  
+  paymentStatus String?  
+ 
+}
+
+
+model Service {
+  id       Int     @default(autoincrement()) @id
+  name      String @unique
+  slug String?
+  image    String?
+  description String 
+  price    Decimal? 
+  discountedPrice Decimal?
+  discount Decimal?
+  status   String?
+  popularity String?
+  createdAt      DateTime  @default(now()) @map(name: "created_at")
  
 }
 

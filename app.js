@@ -10,6 +10,7 @@ const file = require("./routes/file");
 const contact = require("./routes/contact");
 const testinomial = require("./routes/testinomial");
 const subject = require("./routes/subject");
+const service = require("./routes/service");
 
 require("dotenv").config();
 
@@ -56,6 +57,7 @@ app.use("/api/contact", contact);
 app.use("/api", file);
 app.use("/api/testinomial", testinomial);
 app.use("/api/subject", subject);
+app.use("/api/service", service);
 
 const port = process.env.PORT || 8080;
 
